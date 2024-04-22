@@ -22,25 +22,20 @@ if st.button('Submit'):
 # Close the database connection
 conn.close()
 
-# Create API client.
-credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"]
-)
-client = bigquery.Client(credentials=credentials)
+# Add a button to display the data in the database
+if st.button('Show Data'):
+    conn = sqlite3.connect('students.db')
+    c = conn.cursor()
 
-# Perform query.
-# Uses st.experimental_memo to only rerun when the query changes or after 10 min.
-@st.experimental_memo(ttl=600)
-def run_query(query):
-    query_job = client.query(query)
-    rows_raw = query_job.result()
-    # Convert to list of dicts. Required for st.experimental_memo to hash the return value.
-    rows = [dict(row) for row in rows_raw]
-    return rows
+    # Fetch all data from the students table
+    c.execute("SELECT * FROM students")
+    rows = c.fetchall()
 
-rows = run_query("SELECT word FROM `bigquery-public-data.samples.shakespeare` LIMIT 10")
+    # Display the data in a table
+    st.write("Name | Class/Course | Syllabus Link | Mode of Student")
+    st.write("----|--------------|---------------|-----------------")
+    for row in rows:
+        st.write(f"{row[0]} | {row[1]} | {row[2]} | {row[3]}")
 
-# Print results.
-st.write("Some wise words from Shakespeare:")
-for row in rows:
-    st.write("✍️ " + row['word'])
+    # Close the database connection
+    conn.close()
