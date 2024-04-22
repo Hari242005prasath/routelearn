@@ -1,6 +1,5 @@
 import streamlit as st
 import sqlite3
-from google.oauth2 import service_account
 from google.cloud import bigquery
 
 # Connect to the SQLite database
