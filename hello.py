@@ -1,7 +1,7 @@
 import streamlit as st
 
 def greet_user(name):
-    return f"Hello, {name}! Welcome to your first Streamlit app."
+    return f"Hello, {name}! Welcome to our app."
 
 def main():
     st.title("Routelearn")
