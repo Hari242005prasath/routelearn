@@ -1,5 +1,4 @@
 import os
-import jwt
 import logging
 import streamlit as st
 from dotenv import load_dotenv
