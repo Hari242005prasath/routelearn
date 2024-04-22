@@ -1,46 +1,75 @@
 import streamlit as st
 
-# Welcome users to the app
-st.title("RouteLearn: Study Scheduling App")
-st.write("Welcome to RouteLearn, the study scheduling app that will help you manage your daily study commitments and excel academically!")
+# Define project goals, objectives, and target audience
+st.write("### Project Goals, Objectives, and Target Audience")
+st.write("The goal of RouteLearn is to provide a personalized learning experience for students. Our objectives include:")
+st.write("- Creating a user-friendly interface for easy navigation")
+st.write("- Developing algorithms for personalized study plan generation and task prioritization")
+st.write("- Providing a secure and scalable hosting infrastructure")
+st.write("Our target audience includes students, educators, and educational institutions.")
 
-# Allow users to enter their course information
-course_names = st.text_input("Enter the names of the courses you are taking, separated by commas:")
-syllabus_urls = st.text_input("Enter the URLs of your course syllabi:")
-exam_dates = st.date_input("Enter the dates of your exams:")
+# Conduct market research to understand user needs and preferences
+st.write("### Market Research")
+st.write("In order to understand the needs and preferences of our users, we conducted market research through surveys and interviews. We found that students value:")
+st.write("- Personalized learning experiences")
+st.write("- The ability to track their progress")
+st.write("- Interactive and engaging content")
 
-# Analyze the user's learning style and create a personalized study plan
-learning_style = st.radio("Select your learning style:", ("Visual", "Auditory", "Reading/Writing", "Kinesthetic"))
+# Analyze competitors and identify unique selling points
+st.write("### Competitor Analysis")
+st.write("We analyzed our competitors and identified the following unique selling points for RouteLearn:")
+st.write("- Personalized study plans")
+st.write("- Task prioritization based on individual learning styles")
+st.write("- Seamless integration with various devices and browsers")
 
-if learning_style == "Visual":
-    study_plan = "Create flashcards and use diagrams to help you study."
-elif learning_style == "Auditory":
-    study_plan = "Record yourself reading your notes and listen to them to help you study."
-elif learning_style == "Reading/Writing":
-    study_plan = "Take detailed notes and rewrite them to help you study."
-elif learning_style == "Kinesthetic":
-    study_plan = "Use hands-on activities and simulations to help you learn."
+# Define user personas and scenarios
+st.write("### User Personas and Scenarios")
+st.write("We defined user personas and scenarios to better understand the needs and goals of our users. For example, a high school student named Alex might use RouteLearn to:")
+st.write("- Create a personalized study plan for an upcoming exam")
+st.write("- Track their progress and see areas for improvement")
+st.write("- Access interactive and engaging content to help them learn")
 
-# Display the study plan to the user
-st.write("Based on your learning style, your study plan is:")
-st.write(study_plan)
+# Document functional and non-functional requirements
+st.write("### Functional and Non-Functional Requirements")
+st.write("We documented the following functional and non-functional requirements for RouteLearn:")
+st.write("Functional Requirements:")
+st.write("- User registration and authentication")
+st.write("- Study plan generation and management")
+st.write("- Task prioritization and tracking")
+st.write("Non-Functional Requirements:")
+st.write("- Scalability and performance")
+st.write("- Security and data privacy")
+st.write("- Accessibility and usability")
 
-# Allow users to prioritize their study tasks
-task_list = st.text_area("Enter a list of your study tasks, separated by commas:")
-priority_levels = st.slider("Select the priority level for each task:", min_value=1, max_value=5)
+# Create wireframes and prototypes for user interface and user experience
+st.write("### Wireframes and Prototypes")
+st.write("We created wireframes and prototypes to visualize the user interface and user experience of RouteLearn. These include:")
+st.write("- A dashboard for users to view their study plans and progress")
+st.write("- A page for users to create and manage their study plans")
+st.write("- A page for users to access interactive and engaging content")
 
-# Display the prioritized task list to the user
-sorted_tasks = sorted(zip(priority_levels, task_list), reverse=True)
-st.write("Your prioritized task list is:")
-for priority, task in sorted_tasks:
-    st.write(f"{priority}: {task}")
+# Develop the backend infrastructure for user registration and data storage
+st.write("### Backend Infrastructure")
+st.write("We developed the backend infrastructure for RouteLearn using a Python web framework and a relational database. This includes:")
+st.write("- User registration and authentication")
+st.write("- Study plan storage and management")
+st.write("- Task tracking and prioritization")
 
-# Offer rewards and reminders to the user
-rewards = st.slider("Select the rewards you will give yourself for completing tasks:", min_value=1, max_value=5)
-deadline_reminders = st.date_input("Enter the dates for your deadline reminders:")
+# Implement algorithms for personalized study plan generation and task prioritization
+st.write("### Algorithms")
+st.write("We implemented algorithms for personalized study plan generation and task prioritization using machine learning techniques. These algorithms take into account:")
+st.write("- The user's learning style and preferences")
+st.write("- The user's progress and performance")
+st.write("- The difficulty and relevance of the learning materials")
 
-# Display the rewards and reminders to the user
-st.write("Your rewards and deadline reminders are:")
-st.write(f"Rewards: {rewards}")
-st.write(f"Deadline reminders: {deadline_reminders}")
+# Develop the frontend application for user interaction and engagement
+st.write("### Frontend Application")
+st.write("We developed the frontend application for RouteLearn using a modern JavaScript framework and a component-based architecture. This includes:")
+st.write("- A responsive and user-friendly interface")
+st.write("- Interactive and engaging content")
+st.write("- Real-time updates and notifications")
 
+# Conduct unit testing for individual components
+st.write("### Unit Testing")
+st.write("We conducted unit testing for individual components of RouteLearn to ensure that they are working correctly. This includes:")
+st.write("- Test
