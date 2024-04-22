@@ -1,75 +1,101 @@
 import streamlit as st
 
-# Define project goals, objectives, and target audience
-st.write("### Project Goals, Objectives, and Target Audience")
-st.write("The goal of RouteLearn is to provide a personalized learning experience for students. Our objectives include:")
-st.write("- Creating a user-friendly interface for easy navigation")
-st.write("- Developing algorithms for personalized study plan generation and task prioritization")
-st.write("- Providing a secure and scalable hosting infrastructure")
-st.write("Our target audience includes students, educators, and educational institutions.")
+def main():
+    # Define project goals, objectives, and target audience
+    st.write("### Define project goals, objectives, and target audience")
 
-# Conduct market research to understand user needs and preferences
-st.write("### Market Research")
-st.write("In order to understand the needs and preferences of our users, we conducted market research through surveys and interviews. We found that students value:")
-st.write("- Personalized learning experiences")
-st.write("- The ability to track their progress")
-st.write("- Interactive and engaging content")
+    # Conduct market research to understand user needs and preferences
+    st.write("### Conduct market research to understand user needs and preferences")
 
-# Analyze competitors and identify unique selling points
-st.write("### Competitor Analysis")
-st.write("We analyzed our competitors and identified the following unique selling points for RouteLearn:")
-st.write("- Personalized study plans")
-st.write("- Task prioritization based on individual learning styles")
-st.write("- Seamless integration with various devices and browsers")
+    # Analyze competitors and identify unique selling points
+    st.write("### Analyze competitors and identify unique selling points")
 
-# Define user personas and scenarios
-st.write("### User Personas and Scenarios")
-st.write("We defined user personas and scenarios to better understand the needs and goals of our users. For example, a high school student named Alex might use RouteLearn to:")
-st.write("- Create a personalized study plan for an upcoming exam")
-st.write("- Track their progress and see areas for improvement")
-st.write("- Access interactive and engaging content to help them learn")
+    # Requirement Gathering
+    st.write("### Requirement Ggathering")
 
-# Document functional and non-functional requirements
-st.write("### Functional and Non-Functional Requirements")
-st.write("We documented the following functional and non-functional requirements for RouteLearn:")
-st.write("Functional Requirements:")
-st.write("- User registration and authentication")
-st.write("- Study plan generation and management")
-st.write("- Task prioritization and tracking")
-st.write("Non-Functional Requirements:")
-st.write("- Scalability and performance")
-st.write("- Security and data privacy")
-st.write("- Accessibility and usability")
+    # Collaborate with educators, students, and experts to gather requirements
+    st.write("#### Collaborate with educators, students, and experts to gather requirements")
 
-# Create wireframes and prototypes for user interface and user experience
-st.write("### Wireframes and Prototypes")
-st.write("We created wireframes and prototypes to visualize the user interface and user experience of RouteLearn. These include:")
-st.write("- A dashboard for users to view their study plans and progress")
-st.write("- A page for users to create and manage their study plans")
-st.write("- A page for users to access interactive and engaging content")
+    # Define user personas and scenarios
+    st.write("#### Define user personas and scenarios")
 
-# Develop the backend infrastructure for user registration and data storage
-st.write("### Backend Infrastructure")
-st.write("We developed the backend infrastructure for RouteLearn using a Python web framework and a relational database. This includes:")
-st.write("- User registration and authentication")
-st.write("- Study plan storage and management")
-st.write("- Task tracking and prioritization")
+    # Document functional and non-functional requirements
+    st.write("#### Document functional and non-functional requirements")
 
-# Implement algorithms for personalized study plan generation and task prioritization
-st.write("### Algorithms")
-st.write("We implemented algorithms for personalized study plan generation and task prioritization using machine learning techniques. These algorithms take into account:")
-st.write("- The user's learning style and preferences")
-st.write("- The user's progress and performance")
-st.write("- The difficulty and relevance of the learning materials")
+    # Design
+    st.write("### Design")
 
-# Develop the frontend application for user interaction and engagement
-st.write("### Frontend Application")
-st.write("We developed the frontend application for RouteLearn using a modern JavaScript framework and a component-based architecture. This includes:")
-st.write("- A responsive and user-friendly interface")
-st.write("- Interactive and engaging content")
-st.write("- Real-time updates and notifications")
+    # Create wireframes and prototypes for user interface and user experience
+    st.write("#### Create wireframes and prototypes for user interface and user experience")
 
-# Conduct unit testing for individual components
-st.write("### Unit Testing")
-st.write("We conducted unit testing for individual components of RouteLearn to ensure that they are working correctly. This includes:")
-st.write("- Test
+    # Develop the backend infrastructure for user registration and data storage
+    st.write("#### Develop the backend infrastructure for user registration and data storage")
+
+    # Development
+    st.write("### Development")
+
+    # Implement algorithms for personalized study plan generation and task prioritization
+    st.write("#### Implement algorithms for personalized study plan generation and task prioritization")
+
+    # Develop the frontend application for user interaction and engagement
+    st.write("#### Develop the frontend application for user interaction and engagement")
+
+    # Testing
+    st.write("### Testing")
+
+    # Conduct unit testing for individual components
+    st.write("#### Conduct unit testing for individual components")
+
+    # Perform integration testing to ensure proper functioning of the system
+    st.write("#### Perform integration testing to ensure proper functioning of the system")
+
+    # Conduct system testing to validate against requirements
+    st.write("#### Conduct system testing to validate against requirements")
+
+    # Perform user acceptance testing with target users
+    st.write("#### Perform user acceptance testing with target users")
+
+    # Deployment
+    st.write("### Deployment")
+
+    # Deploy RouteLearn on scalable and secure hosting infrastructure
+    st.write("#### Deploy RouteLearn on scalable and secure hosting infrastructure")
+
+    # Ensure compatibility with various devices and browsers
+    st.write("#### Ensure compatibility with various devices and browsers")
+
+    # Launch & Marketing
+    st.write("### Launch & Marketing")
+
+    # Plan marketing strategy and promotional activities
+    st.write("#### Plan marketing strategy and promotional activities")
+
+    # Launch RouteLearn with targeted marketing campaigns
+    st.write("#### Launch RouteLearn with targeted marketing campaigns")
+
+    # Gather feedback from initial users and adjust marketing strategies as needed
+    st.write("#### Gather feedback from initial users and adjust marketing strategies as needed")
+
+    # Feedback & Iteration
+    st.write("### Feedback & Iteration")
+
+    # Collect user feedback on RouteLearn's features and usability
+    st.write("#### Collect user feedback on RouteLearn's features and usability")
+
+    # Analyze usage metrics and identify areas for improvement
+    st.write("#### Analyze usage metrics and identify areas for improvement")
+
+    # Iterate on the platform based on user feedback and emerging trends
+    st.write("#### Iterate on the platform based on user feedback and emerging trends")
+
+    # Continuous Improvement
+    st.write("### Continuous Improvement")
+
+    # Implement regular updates and enhancements to RouteLearn
+    st.write("#### Implement regular updates and enhancements to RouteLearn")
+
+    # Stay informed about advancements in technology and education
+    st.write("#### Stay informed about advancements in technology and education")
+
+if __name__ == '__main__':
+    main()
