@@ -4,7 +4,7 @@ def greet_user(name):
     return f"Hello, {name}! Welcome to your first Streamlit app."
 
 def main():
-    st.title("Basic Streamlit App")
+    st.title("Routelearn")
 
     # Get user input for their name
     user_name = st.text_input("Enter your name:")
